@@ -32,7 +32,7 @@ The web api use is in Free Tier - no HTTPS to access data you need to disable yo
   * Back to page
   * Reload
     
-#Firefox
+# Firefox
   * Click on the padlock (beside URL)
   * Click "Connection Secure"
   * Click "Disable protection for now"
