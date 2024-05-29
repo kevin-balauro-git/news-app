@@ -14,12 +14,25 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Host
+Web app is hosted in [Firebase](https://firebase.google.com/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Link
+Website url: [Link](https://news-ngayon-firebase-project.firebaseapp.com/news/general)
 
-## Running end-to-end tests
+## Blocked loading mixed active content
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+The web api use is in Free Tier - no HTTPS to access data you need to disable your secure connection 
 
-
+# Chrome
+  * Click "View site information" (beside url)
+  * Click "Site Setting"
+  * Look for "Insecure content"
+  * Change to Allow
+  * Back to page
+  * Reload
+    
+#Firefox
+  * Click on the padlock (beside URL)
+  * Click "Connection Secure"
+  * Click "Disable protection for now"
