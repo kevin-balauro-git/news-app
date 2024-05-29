@@ -1,0 +1,21 @@
+.pagination-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.pagination-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-items {
+  background-color: #dc143c;
+  color: #fff;
+  padding: 0.5em;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}

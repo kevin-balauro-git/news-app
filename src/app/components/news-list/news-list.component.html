@@ -1,0 +1,40 @@
+<div *ngIf="getNewsData() as newsData">
+  <div>
+    <ul class="news-container" *ngIf="newsData.data.length > 0; else noNews">
+      <li class="news-details" *ngFor="let news of newsData.data">
+        <div class="news-title-container">
+          <h3 class="news-title">{{ news["title"] }}</h3>
+        </div>
+        <div class="news-info-container">
+          <h5 class="news-info-source">{{ news["source"] }}</h5>
+          <p class="news-info-published">
+            {{ news["published_at"] | date : "shortDate" }}
+          </p>
+          <p class="news-info-description">
+            {{ news["description"] | slice : 0 : 300 }} ..
+          </p>
+
+          <p class="news-info-url">
+            <a class="news-info-url-link" [href]="news['url']" target="”_blank”"
+              >Read More</a
+            >
+          </p>
+          <div class="news-bookmark-container">
+            <img
+              (click)="addToBookmark(news)"
+              class="news-bookmark-image"
+              src="../assets/img/bookmark.png"
+            />
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <app-pagination
+    [pagination]="newsData.pagination"
+    (changePage)="changePage($event)"
+  ></app-pagination>
+  <ng-template #noNews>
+    <h1>No News Found</h1>
+  </ng-template>
+</div>

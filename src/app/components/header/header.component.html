@@ -1,0 +1,35 @@
+<header>
+  <div class="logo-container">
+    <div class="logo-image-container">
+      <img class="logo-image" src="../assets/img/favicon.png" alt="Logo" />
+    </div>
+    <div class="logo-link-container">
+      <a class="logo-link" [routerLink]="['/news', 'general']"
+        ><h1>News Ngayon</h1>
+      </a>
+    </div>
+  </div>
+  <div class="search-container">
+    <input class="search-input" type="text" placeholder="" #word />
+    <button
+      class="search-button"
+      type="button"
+      (click)="getNewsWithKeyword(word.value); word.value = ''"
+    >
+      <span class="search-button-text">Search</span>
+    </button>
+  </div>
+
+  <div class="login-container" *ngIf="getCurrentSig() === null">
+    <button class="login-link login" routerLink="/login">Log In</button>
+  </div>
+  <div class="login-container" *ngIf="getCurrentSig()">
+    <a
+      class="login-link login-bookmark"
+      routerLink="/bookmark"
+      style="margin-right: 4px"
+      >Bookmark</a
+    >
+    <button class="login-link logout" (click)="logout()">Log Out</button>
+  </div>
+</header>

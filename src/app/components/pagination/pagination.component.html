@@ -1,0 +1,11 @@
+<div class="pagination-container" *ngIf="pagination">
+  <ul class="pagination-list" *ngIf="getPageNumbers() !== 1">
+    <li
+      *ngFor="let item of [].constructor(10); let currentElementIndex = index"
+      class="pagination-items"
+      (click)="changePageEvent(currentElementIndex)"
+    >
+      {{ currentElementIndex + 1 }}
+    </li>
+  </ul>
+</div>

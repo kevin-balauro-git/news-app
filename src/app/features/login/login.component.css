@@ -1,0 +1,128 @@
+.login-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.login-title {
+  font-size: 2.25rem;
+  padding: 0.2em;
+  flex: 0;
+  background-color: #dc143c;
+  color: #fff;
+  width: 100%;
+  height: 90%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  text-align: center;
+}
+.login-error-container {
+  width: 100%;
+  padding: 1em;
+}
+
+.login-error {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #dc143c;
+  text-align: center;
+}
+
+.login-form-container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(224, 224, 224);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.login-item-container {
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-item-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+.login-item-input {
+  width: 80%;
+  border: 2px #000 solid;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+.login-button {
+  width: 80%;
+  padding: 0.75em;
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.submit {
+  background-color: #28289b;
+}
+
+.submit:hover {
+  background-color: #c4b4b4;
+  color: #28289b;
+}
+
+.guest {
+  background-color: #289b37;
+}
+
+.guest:hover {
+  background-color: #c4b4b4;
+  color: #289b37;
+}
+
+.cancel {
+  background-color: #c81e1e;
+}
+
+.cancel:hover {
+  color: #c81e1e;
+  background-color: #c4b4b4;
+}
+
+@media screen and (min-width: 800px) {
+  .login-container {
+    height: 100%;
+  }
+
+  .login-title {
+    padding: 0.35rem;
+    flex: 0;
+  }
+
+  .login-form-container {
+  }
+
+  .login-item-input,
+  .login-button {
+    width: 50%;
+  }
+}

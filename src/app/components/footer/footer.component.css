@@ -1,0 +1,14 @@
+.text {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.link-to {
+  text-decoration: underline 0.15em rgba(220, 20, 60, 0);
+  transition: text-decoration 1000ms;
+  font-weight: bold;
+}
+
+.link-to:hover {
+  text-decoration-color: rgba(220, 20, 60, 1);
+}

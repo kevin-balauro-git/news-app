@@ -1,0 +1,12 @@
+<nav>
+  <ul class="category-container-list">
+    <li class="category-list" *ngFor="let category of getCategories()">
+      <a
+        class="category-item"
+        [routerLink]="['/news', category]"
+        [routerLinkActive]="'active'"
+        >{{ category | titlecase }}</a
+      >
+    </li>
+  </ul>
+</nav>

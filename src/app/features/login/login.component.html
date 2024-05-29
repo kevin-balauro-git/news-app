@@ -1,0 +1,33 @@
+<div class="login-container">
+  <h2 class="login-title">Sign In</h2>
+  <form
+    class="login-form-container"
+    [formGroup]="getForm()"
+    (ngSubmit)="login()"
+  >
+    <div class="login-error-container" *ngIf="getErrorMessage()">
+      <p class="login-error">Error: {{ getErrorMessage() }}</p>
+    </div>
+    <div class="login-item-container">
+      <label class="login-item-label" for="">Email:</label>
+      <input class="login-item-input" type="email" formControlName="email" />
+    </div>
+    <div class="login-item-container">
+      <label class="login-item-label" for="">Password:</label>
+      <input
+        class="login-item-input"
+        type="password"
+        formControlName="password"
+      />
+    </div>
+    <div class="login-item-container">
+      <button class="login-button submit" type="submit">Sign In</button>
+      <button class="login-button guest" type="button" (click)="guest()">
+        Guest Sign In
+      </button>
+      <button class="login-button cancel" type="button" (click)="cancel()">
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>

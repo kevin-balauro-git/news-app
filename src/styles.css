@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  overflow-y: hidden;
+  position: relative;
+  max-width: 100%;
+  min-height: 100%;
+  font-family: "Noticia", "Times New Roman", sans-serif;
+  background-color: #f9fcff;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  margin: 1em auto;
+  padding-bottom: 3.5rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}

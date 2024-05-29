@@ -1,0 +1,42 @@
+a.active {
+  text-decoration: underline 0.15em rgba(220, 20, 60, 1);
+}
+
+nav {
+  display: block;
+  margin: 0.25em;
+}
+
+.category-container-list {
+  width: 100%;
+  display: block;
+}
+
+.category-list {
+  list-style: none;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.category-item {
+  display: block;
+  font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+  text-decoration: underline 0.15em rgba(220, 20, 60, 0);
+  transition: text-decoration 1000ms;
+  width: 100%;
+  padding: 4px;
+  text-align: center;
+}
+
+.category-item:hover {
+  text-decoration-color: rgba(220, 20, 60, 1);
+}
+
+@media screen and (min-width: 720px) {
+  .category-container-list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
