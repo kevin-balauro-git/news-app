@@ -2,7 +2,7 @@
 
 This project uses Angular version 18, call an API to [MediaStack](https://mediastack.com/) and uses [Firebase](https://firebase.google.com/) to store bookmark News  
 
-:warning: [!WARNING] [!WARNING]
+:warning: **WARNING**
 # Blocked loading mixed active content
 
 The web api use is in Free Tier - no HTTPS to access data you need to disable your secure connection 
