@@ -14,7 +14,10 @@ The web api use is in Free Tier - no HTTPS to access data you need to disable yo
   * Change to Allow
   * Back to page
   * Reload
-    
+![chrome](https://github.com/kevin-balauro-git/news-app/assets/171119692/d0b21a1c-c7e9-4941-9067-459a3663c93b)
+
+---------------------------------------------------------------------------------------------------------------
+
 ## Firefox
   * Click on the padlock (beside URL)
   * Click "Connection Secure"
