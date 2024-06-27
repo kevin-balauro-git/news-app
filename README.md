@@ -1,6 +1,6 @@
 # News App
 
-This project uses Angular version 18, call an API to [MediaStack](https://mediastack.com/) and uses [Firebase](https://firebase.google.com/) to store bookmark News  
+This project uses [Angular](https://angular.dev/) version 18, call an API to [MediaStack](https://mediastack.com/) and uses [Firebase](https://firebase.google.com/) to store bookmark News  
 
 :warning: **WARNING**
 # Blocked loading mixed active content
