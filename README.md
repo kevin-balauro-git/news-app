@@ -19,6 +19,7 @@ The web api use is in Free Tier - no HTTPS to access data you need to disable yo
   * Click on the padlock (beside URL)
   * Click "Connection Secure"
   * Click "Disable protection for now"
+![firefox](https://github.com/kevin-balauro-git/news-app/assets/171119692/9db91e2f-9c35-4ca3-8566-e472c3f43343)
 
 ## Host
 Web app is hosted in [Firebase](https://firebase.google.com/)
